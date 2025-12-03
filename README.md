@@ -1,4 +1,4 @@
-# genieExpressJS Core
+# AstroExpress
 
 Production-ready Express + TypeScript authentication boilerplate.
 
@@ -22,7 +22,7 @@ Production-ready Express + TypeScript authentication boilerplate.
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/peaceiam4now-hash/AstroExpress.git
    cd AstroExpress
    ```
 
@@ -246,13 +246,13 @@ docker-compose down
 ### Build Docker Image
 
 ```bash
-docker build -t genie-express-js .
+docker build -t astro-express .
 ```
 
 ### Run Docker Container
 
 ```bash
-docker run -p 4000:4000 --env-file .env genie-express-js
+docker run -p 4000:4000 --env-file .env astro-express
 ```
 
 ## Security Notes
