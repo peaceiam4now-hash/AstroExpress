@@ -237,23 +237,18 @@ describe('Authentication System', () => {
   });
 
   describe('GET /auth/me', () => {
-    let authToken: string;
-    let userId: string;
-
-    beforeEach(async () => {
-      // Register and get token
-      const response = await request(app)
-        .post('/auth/register')
-        .send({
-          email: 'me-test@example.com',
-          password: 'password123',
-        });
-
-      authToken = response.body.token;
-      userId = response.body.user.id;
-    });
-
     it('should return user data with valid token', async () => {
+      const userId = 'me-test-uuid';
+      const mockUser = {
+        id: userId,
+        email: 'me-test@example.com',
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      };
+
+      const authToken = generateToken(userId);
+      (mockPrisma.user.findUnique as jest.Mock).mockResolvedValue(mockUser);
+
       const response = await request(app)
         .get('/auth/me')
         .set('Authorization', `Bearer ${authToken}`);
@@ -290,10 +285,28 @@ describe('Authentication System', () => {
     });
 
     it('should return 401 with expired token', async () => {
-      // Create a token that appears to be expired (manipulated)
       const response = await request(app)
         .get('/auth/me')
         .set('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3ODkwIiwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE1MTYyMzkwMjJ9.invalid');
+
+      expect(response.status).toBe(401);
+    });
+
+    it('should return 404 when user not found in database', async () => {
+      const authToken = generateToken('non-existent-user');
+      (mockPrisma.user.findUnique as jest.Mock).mockResolvedValue(null);
+
+      const response = await request(app)
+        .get('/auth/me')
+        .set('Authorization', `Bearer ${authToken}`);
+
+      expect(response.status).toBe(404);
+    });
+
+    it('should return 401 with empty Bearer token', async () => {
+      const response = await request(app)
+        .get('/auth/me')
+        .set('Authorization', 'Bearer ');
 
       expect(response.status).toBe(401);
     });
@@ -321,16 +334,24 @@ describe('Authentication System', () => {
     it('should verify correct password', async () => {
       const plain = 'testpassword';
       const hash = await hashPassword(plain);
-      const isValid = await bcrypt.compare(plain, hash);
+      const isValid = await verifyPassword(plain, hash);
 
       expect(isValid).toBe(true);
     });
 
     it('should reject incorrect password', async () => {
       const hash = await hashPassword('correctpassword');
-      const isValid = await bcrypt.compare('wrongpassword', hash);
+      const isValid = await verifyPassword('wrongpassword', hash);
 
       expect(isValid).toBe(false);
+    });
+
+    it('should produce different hashes for same password', async () => {
+      const password = 'samepassword';
+      const hash1 = await hashPassword(password);
+      const hash2 = await hashPassword(password);
+
+      expect(hash1).not.toBe(hash2);
     });
   });
 
