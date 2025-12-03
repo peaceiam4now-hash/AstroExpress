@@ -27,7 +27,6 @@ const getWelcome = (req, res) => {
       version: config.app.version,
       endpoints: {
         health: '/api/health',
-        docs: '/api/docs',
       },
     },
   });

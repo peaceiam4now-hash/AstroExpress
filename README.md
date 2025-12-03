@@ -154,6 +154,16 @@ LOG_LEVEL=dev
 - **Environment Variables** - Sensitive data stored securely
 - **Error Handling** - Safe error messages in production
 
+### Security Recommendations for Production
+
+For production deployments, consider adding:
+
+- **Rate Limiting** - Implement rate limiting using `express-rate-limit` to protect against brute-force attacks
+- **Input Validation** - Add input validation middleware for user-submitted data
+- **Authentication** - Implement JWT or session-based authentication
+- **HTTPS** - Always use HTTPS in production environments
+- **Content Security Policy** - Configure CSP headers for additional XSS protection
+
 ## 🎨 Astronaut UI Design System
 
 This boilerplate is inspired by the [Astronaut UI Design System](https://www.astrouxds.com/) (Astro UXDS), a comprehensive design system created for mission-critical space and defense applications. The included landing page features:
