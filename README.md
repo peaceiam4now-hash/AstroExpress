@@ -1,157 +1,232 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/AstroExpress-Production%20API%20Starter-111?style=for-the-badge&logo=express&logoColor=white" alt="AstroExpress" />
-</p>
+<div align="center">
 
-<h1 align="center">🚀 AstroExpress</h1>
+<br/>
 
-<p align="center">
-  <strong>Enterprise-grade Express.js + TypeScript Authentication Boilerplate</strong><br/>
-  Built for engineers who care about security, reliability, and speed.
-</p>
+<img src="https://img.shields.io/badge/ASTRO-EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white&labelColor=5C4EE5" alt="AstroExpress" />
 
-<p align="center">
-  <em>Launch secure, production-ready APIs in minutes — not weeks.</em>
-</p>
+<br/>
+<br/>
 
-<p align="center">
-  <a href="#features">Features</a> •
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#api-reference">API Reference</a> •
-  <a href="#-project-structure">Architecture</a> •
-  <a href="#-need-more-go-premium">Go Premium</a>
-</p>
+# 🚀 AstroExpress
 
-<!-- Tech Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-%3E%3D18.0.0-339933?style=flat-square&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express-4.18-000000?style=flat-square&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-5.7-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-16-336791?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white" />
-</p>
+**Enterprise-grade Express.js + TypeScript Authentication Boilerplate**
 
-<!-- Quality Badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Tests-27%20Passing-28a745?style=flat-square" />
-  <img src="https://img.shields.io/badge/Coverage-95.93%25-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/badge/License-MIT-F6C915?style=flat-square" />
-  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" />
-</p>
+*Built for engineers who care about security, reliability, and speed.*
+
+<br/>
+
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+[![Express](https://img.shields.io/badge/Express-4.18-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.7-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io/)
+
+<br/>
+
+[![Tests](https://img.shields.io/badge/✓_27_Tests_Passing-28a745?style=flat-square)](#testing)
+[![Coverage](https://img.shields.io/badge/✓_95.93%25_Coverage-28a745?style=flat-square)](#testing)
+[![License](https://img.shields.io/badge/License-MIT-F6C915?style=flat-square)](#license)
+
+<br/>
+
+[**Features**](#-features) · [**Quick Start**](#-quick-start) · [**API Docs**](#-api-reference) · [**Go Premium**](#-need-more-go-premium)
+
+<br/>
 
 ---
+
+<br/>
+
+</div>
 
 ## ⚡ Why AstroExpress?
 
-Every backend project begins with the same painful checklist:
+<div align="center">
 
-- Authentication  
-- Password hashing  
-- Input validation  
-- Error formatting  
-- Database wiring  
-- Boilerplate testing  
-- Docker setup  
+*Stop rebuilding authentication from scratch. Start shipping.*
 
-**AstroExpress gives you all of this on day one — clean, tested, production-ready.**
+</div>
+
+<br/>
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" align="center">
 
-### ❌ Without AstroExpress:
-- 2–5 days building auth  
-- Undocumented logic  
-- Zero test coverage  
-- Inconsistent error handling  
-- Hand-rolled security  
-- "Hope it works" deployments
+<br/>
+
+### 😩 Without AstroExpress
+
+<br/>
+
+```
+❌  2–5 days building auth
+❌  Undocumented logic
+❌  Zero test coverage
+❌  Inconsistent errors
+❌  Hand-rolled security
+❌  "Hope it works"
+```
+
+<br/>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" align="center">
 
-### ✅ With AstroExpress:
-- **5 minutes** to first secure endpoint  
-- Production-ready authentication  
-- **27 tests**, 95.93% coverage  
-- Unified JSON errors  
-- Prisma + PostgreSQL pre-wired  
-- Docker-ready deployment
+<br/>
+
+### 🚀 With AstroExpress
+
+<br/>
+
+```
+✅  5 minutes to first endpoint
+✅  Production-ready auth
+✅  27 tests, 95.93% coverage
+✅  Unified JSON errors
+✅  Prisma + PostgreSQL
+✅  Docker-ready deployment
+```
+
+<br/>
 
 </td>
 </tr>
 </table>
 
+<br/>
+
 ---
+
+<br/>
+
+<div align="center">
 
 ## ✨ Features
 
+</div>
+
+<br/>
+
 <table>
 <tr>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### 🔐 Secure Authentication
-- JWT tokens with HS256 signing
-- 24-hour token expiry
-- bcrypt password hashing (12 rounds)
-- Protected route middleware
+
+<br/>
+
+JWT tokens with HS256 signing<br/>
+24-hour token expiry<br/>
+bcrypt password hashing (12 rounds)<br/>
+Protected route middleware
+
+<br/>
 
 </td>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### 🗄️ Database Ready
-- Prisma ORM with full TypeScript support
-- PostgreSQL configuration included
-- Auto-generated migrations
-- Type-safe database queries
+
+<br/>
+
+Prisma ORM with full TypeScript support<br/>
+PostgreSQL configuration included<br/>
+Auto-generated migrations<br/>
+Type-safe database queries
+
+<br/>
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### ✅ Fully Tested
-- 27 comprehensive tests
-- 95.93% code coverage
-- Unit & integration tests
-- Mock-based testing setup
+
+<br/>
+
+27 comprehensive tests<br/>
+95.93% code coverage<br/>
+Unit & integration tests<br/>
+Mock-based testing setup
+
+<br/>
 
 </td>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### 🐳 Docker Support
-- Docker Compose for PostgreSQL
-- Production Dockerfile included
-- One-command database setup
-- Environment configuration
+
+<br/>
+
+Docker Compose for PostgreSQL<br/>
+Production Dockerfile included<br/>
+One-command database setup<br/>
+Environment configuration
+
+<br/>
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### 📝 Input Validation
-- Zod schema validation
-- Email format validation
-- Password strength requirements
-- Descriptive error messages
+
+<br/>
+
+Zod schema validation<br/>
+Email format validation<br/>
+Password strength requirements<br/>
+Descriptive error messages
+
+<br/>
 
 </td>
-<td width="50%">
+<td width="50%" align="center">
+
+<br/>
 
 ### 🛡️ Error Handling
-- Custom AppError class
-- Consistent JSON responses
-- HTTP status codes
-- Graceful error recovery
+
+<br/>
+
+Custom AppError class<br/>
+Consistent JSON responses<br/>
+HTTP status codes<br/>
+Graceful error recovery
+
+<br/>
 
 </td>
 </tr>
 </table>
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 🚀 Quick Start
+
+*Get up and running in under 5 minutes*
+
+</div>
+
+<br/>
 
 ### Prerequisites
 
@@ -196,9 +271,21 @@ curl -X POST http://localhost:4000/auth/register \
   -d '{"email": "hello@example.com", "password": "securepass123"}'
 ```
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 📖 API Reference
+
+*Clean, consistent, production-ready endpoints*
+
+</div>
+
+<br/>
 
 ### Health Check
 
@@ -322,9 +409,21 @@ All errors follow a consistent format:
 | `404` | Not Found — Resource doesn't exist |
 | `500` | Internal Server Error — Something went wrong |
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 📁 Project Structure
+
+*Clean, modular architecture*
+
+</div>
+
+<br/>
 
 ```
 AstroExpress/
@@ -357,9 +456,21 @@ AstroExpress/
 └── tsconfig.json              # TypeScript config
 ```
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 🎯 Use Cases
+
+*Real-world success stories*
+
+</div>
+
+<br/>
 
 ### 💼 Case Study: SaaS Startup MVP
 
@@ -389,9 +500,21 @@ AstroExpress/
 >
 > **Result:** Zero security incidents since migration. 95% test coverage ensures reliability with every deployment.
 
+<br/>
+
 ---
 
-## 🛠️ Available Scripts
+<br/>
+
+<div align="center">
+
+## 🛠 Available Scripts
+
+*Everything you need, at your fingertips*
+
+</div>
+
+<br/>
 
 | Command | Description |
 |---------|-------------|
@@ -403,9 +526,21 @@ AstroExpress/
 | `npm run prisma:generate` | Generate Prisma client |
 | `npm run prisma:migrate` | Run database migrations |
 
+<br/>
+
 ---
 
-## ⚙️ Environment Variables
+<br/>
+
+<div align="center">
+
+## 🔐 Environment Variables
+
+*Secure configuration made simple*
+
+</div>
+
+<br/>
 
 | Variable | Description | Default |
 |----------|-------------|---------|
@@ -416,9 +551,21 @@ AstroExpress/
 
 > ⚠️ **Security Note:** Always use a strong, unique `JWT_SECRET` in production. Never commit your `.env` file.
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 🧪 Testing
+
+*Battle-tested reliability*
+
+</div>
+
+<br/>
 
 ```bash
 # Run all tests with coverage
@@ -438,9 +585,21 @@ All files          |   95.93 |    83.33 |   92.85 |   95.86 |
 -------------------|---------|----------|---------|---------|
 ```
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 🐳 Docker Deployment
+
+*Production-ready containerization*
+
+</div>
+
+<br/>
 
 ### Development (PostgreSQL only)
 
@@ -461,13 +620,23 @@ docker run -p 4000:4000 \
   astro-express
 ```
 
+<br/>
+
 ---
 
-<h2 align="center">💎 Need More? Go Premium</h2>
+<br/>
 
-<p align="center">
-  <strong>AstroExpress Free is powerful, but AstroExpress Premium is unstoppable.</strong>
-</p>
+<div align="center">
+
+## 💎 Need More? Go Premium
+
+<br/>
+
+**AstroExpress Free is powerful, but AstroExpress Premium is unstoppable.**
+
+</div>
+
+<br/>
 
 <table align="center">
 <tr>
@@ -546,9 +715,21 @@ docker run -p 4000:4000 \
   </a>
 </p>
 
+<br/>
+
 ---
 
+<br/>
+
+<div align="center">
+
 ## 🤝 Contributing
+
+*Join the community*
+
+</div>
+
+<br/>
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -558,24 +739,44 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+<br/>
+
 ---
+
+<br/>
+
+<div align="center">
 
 ## 📄 License
 
+*Open source, free forever*
+
+</div>
+
+<br/>
+
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+<br/>
 
 ---
 
-<p align="center">
-  <strong>Built with ❤️ by developers, for developers.</strong>
-</p>
+<br/>
 
-<p align="center">
-  <a href="https://github.com/peaceiam4now-hash/AstroExpress">
-    <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-Support%20the%20Project-yellow?style=for-the-badge&logo=github" alt="Star on GitHub" />
-  </a>
-</p>
+<div align="center">
 
-<p align="center">
-  <sub>If AstroExpress saved you time, consider starring the repo! It helps others discover the project.</sub>
-</p>
+### ⭐ Built with ❤️ by developers, for developers.
+
+<br/>
+
+<a href="https://github.com/peaceiam4now-hash/AstroExpress">
+  <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-Support%20the%20Project-yellow?style=for-the-badge&logo=github" alt="Star on GitHub" />
+</a>
+
+<br/><br/>
+
+<sub>If AstroExpress saved you time, consider starring the repo!<br/>It helps others discover the project.</sub>
+
+<br/><br/>
+
+</div>
