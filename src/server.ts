@@ -34,7 +34,7 @@ app.get('/', (_req: Request, res: Response) => {
       login: 'POST /auth/login',
       me: 'GET /auth/me (protected)',
     },
-    documentation: 'https://github.com/peaceiam4now-hash/AstroExpress',
+    documentation: 'https://github.com/astro-dev-lab/astro-express',
   });
 });
 

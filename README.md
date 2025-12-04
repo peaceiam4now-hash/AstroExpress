@@ -7,11 +7,11 @@
 <br/>
 <br/>
 
-# 🚀 AstroExpress
+# 🚀 AstroExpress — Express.js TypeScript Authentication Starter Kit
 
-**Enterprise-grade Express.js + TypeScript Authentication Boilerplate**
+**Production-Ready Node.js REST API Boilerplate with JWT, Prisma & PostgreSQL**
 
-*Built for engineers who care about security, reliability, and speed.*
+*The fastest way to build secure, scalable APIs. Built for engineers who care about security, reliability, and speed.*
 
 <br/>
 
@@ -238,8 +238,8 @@ Graceful error recovery
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/peaceiam4now-hash/AstroExpress.git
-cd AstroExpress
+git clone https://github.com/astro-dev-lab/astro-express.git
+cd astro-express
 
 # 2. Install dependencies
 npm install
@@ -704,13 +704,13 @@ docker run -p 4000:4000 \
 
 <p align="center">
   <br />
-  <a href="mailto:peaceiam4now@example.com?subject=AstroExpress%20Premium%20Inquiry">
+  <a href="mailto:hello@astrodevlab.com?subject=AstroExpress%20Premium%20Inquiry">
     <img src="https://img.shields.io/badge/📧%20Get%20Premium-Contact%20Now-blueviolet?style=for-the-badge" alt="Get Premium" />
   </a>
   <br /><br />
   <strong>Or hire me to build your complete backend:</strong>
   <br /><br />
-  <a href="mailto:peaceiam4now@example.com?subject=Custom%20Backend%20Development">
+  <a href="mailto:hello@astrodevlab.com?subject=Custom%20Backend%20Development">
     <img src="https://img.shields.io/badge/💼%20Custom%20Development-Let's%20Talk-success?style=for-the-badge" alt="Custom Development" />
   </a>
 </p>
@@ -769,7 +769,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <br/>
 
-<a href="https://github.com/peaceiam4now-hash/AstroExpress">
+<a href="https://github.com/astro-dev-lab/astro-express">
   <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-Support%20the%20Project-yellow?style=for-the-badge&logo=github" alt="Star on GitHub" />
 </a>
 
