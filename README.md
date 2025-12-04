@@ -444,90 +444,41 @@ docker run -p 4000:4000 \
 <th width="33%">🏢 Enterprise</th>
 </tr>
 <tr>
-<td>
+<td valign="top">
 
 - ✅ JWT Authentication
 - ✅ User Registration/Login
-- ✅ Password Hashing
+- ✅ Password Hashing (bcrypt)
 - ✅ Protected Routes
 - ✅ PostgreSQL + Prisma
 - ✅ Docker Support
-- ✅ 27 Tests
+- ✅ Zod Validation
+- ✅ 27 Tests (95% coverage)
+- ✅ MIT License
 
 </td>
-<td>
+<td valign="top">
 
-**Core Architecture**
-- ⭐ Layered architecture (controllers, services, repositories)
-- ⭐ Centralized configuration system
-- ⭐ Environment schema validation
-- ⭐ ESLint + Prettier preconfigured
+- ⭐ Access + Refresh Token Rotation
+- ⭐ Role-Based Access Control (RBAC)
+- ⭐ Permission-Based Authorization
+- ⭐ Email Verification Flow
+- ⭐ Password Reset Flow
+- ⭐ Rate Limiting & Brute-Force Protection
+- ⭐ OpenTelemetry Tracing
+- ⭐ Swagger/OpenAPI Auto-Docs
+- ⭐ CLI Scaffolding Tool
+- ⭐ 150+ Tests
 
-**Advanced Authentication**
-- ⭐ Access + refresh token rotation
-- ⭐ Device/session tracking
-- ⭐ Login throttling & brute-force protection
-- ⭐ IP-based suspicious login detection
-
-**Complete Account Lifecycle**
-- ⭐ Email verification flow
-- ⭐ Forgot/reset password endpoints
-- ⭐ HTML email templates
-- ⭐ Provider support (Resend, SendGrid)
-
-**RBAC Authorization Engine**
-- ⭐ Role-based access control
-- ⭐ Permission-based access control
-- ⭐ `@RequiresRole` / `@RequiresPermission` decorators
-- ⭐ Pre-seeded roles + permissions
-
-**Security Pack**
-- ⭐ Helmet configuration
-- ⭐ Rate limiting (per route + global)
-- ⭐ API key support
-- ⭐ Zod input validation + sanitization
-
-**Observability & Monitoring**
-- ⭐ OpenTelemetry tracing
-- ⭐ Structured JSON logging (Pino/Winston)
-- ⭐ Correlation ID injection
-- ⭐ Healthcheck + uptime endpoints
-
-**API Documentation**
-- ⭐ Auto-generated OpenAPI/Swagger
-- ⭐ `/docs` route with Swagger UI
-- ⭐ `openapi.json` for client generation
-
-**CLI Scaffolding Tool**
-- ⭐ `npx astro new api`
-- ⭐ `npx astro generate module users`
-- ⭐ `npx astro add auth`
-- ⭐ `npx astro add rbac`
-
-**Deployment Tooling**
-- ⭐ Production Dockerfile
-- ⭐ Render/Railway/Fly.io templates
-- ⭐ PM2 ecosystem config
-
-**Full Test Suite**
-- ⭐ 150+ tests
-- ⭐ Auth lifecycle testing
-- ⭐ RBAC testing
-- ⭐ Test factories & mock utilities
-
-**Developer Tools**
-- ⭐ VSCode workspace config
-- ⭐ Debugger launch config
-- ⭐ Git hooks with Husky
-
-**Bonus Add-ons**
-- ⭐ Postman + Insomnia collections
-- ⭐ TypeScript client SDK
-- ⭐ Audit logging module
-- ⭐ Professional documentation
+**+ Bonus Extras:**
+- 🎁 Postman & Insomnia Collections
+- 🎁 TypeScript Client SDK
+- 🎁 Deployment Templates (Render, Railway, Fly.io)
+- 🎁 Professional Documentation
+- 🎁 ...and more
 
 </td>
-<td>
+<td valign="top">
 
 - ✅ Everything in Premium
 - 🏆 Multi-tenant Architecture
