@@ -1,54 +1,86 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/AstroExpress-Authentication%20Boilerplate-blueviolet?style=for-the-badge&logo=express" alt="AstroExpress" />
+  <img src="https://img.shields.io/badge/AstroExpress-Production%20API%20Starter-111?style=for-the-badge&logo=express&logoColor=white" alt="AstroExpress" />
 </p>
 
 <h1 align="center">🚀 AstroExpress</h1>
 
 <p align="center">
-  <strong>Production-Ready Express + TypeScript Authentication Boilerplate</strong>
+  <strong>Enterprise-grade Express.js + TypeScript Authentication Boilerplate</strong><br/>
+  Built for engineers who care about security, reliability, and speed.
 </p>
 
 <p align="center">
-  Launch your next backend project in minutes, not weeks.
+  <em>Launch secure, production-ready APIs in minutes — not weeks.</em>
 </p>
 
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#quick-start">Quick Start</a> •
   <a href="#api-reference">API Reference</a> •
-  <a href="#use-cases">Use Cases</a> •
+  <a href="#-project-structure">Architecture</a> •
   <a href="#-need-more-go-premium">Go Premium</a>
 </p>
 
+<!-- Tech Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=flat-square&logo=node.js" alt="Node Version" />
-  <img src="https://img.shields.io/badge/TypeScript-5.3-blue?style=flat-square&logo=typescript" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Express-4.18-000000?style=flat-square&logo=express" alt="Express" />
-  <img src="https://img.shields.io/badge/Prisma-5.7-2D3748?style=flat-square&logo=prisma" alt="Prisma" />
-  <img src="https://img.shields.io/badge/PostgreSQL-16-336791?style=flat-square&logo=postgresql" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker" alt="Docker" />
+  <img src="https://img.shields.io/badge/Node.js-%3E%3D18.0.0-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-4.18-000000?style=flat-square&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-5.7-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-16-336791?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
+<!-- Quality Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Tests-27%20Passing-success?style=flat-square" alt="Tests" />
-  <img src="https://img.shields.io/badge/Coverage-95.93%25-brightgreen?style=flat-square" alt="Coverage" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome" />
+  <img src="https://img.shields.io/badge/Tests-27%20Passing-28a745?style=flat-square" />
+  <img src="https://img.shields.io/badge/Coverage-95.93%25-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-F6C915?style=flat-square" />
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" />
 </p>
 
 ---
 
 ## ⚡ Why AstroExpress?
 
-Stop reinventing the wheel. Every new project requires the same authentication boilerplate—user registration, login, JWT tokens, password hashing, middleware protection. **AstroExpress gives you all of this out of the box**, battle-tested and production-ready.
+Every backend project begins with the same painful checklist:
 
-| ❌ Without AstroExpress | ✅ With AstroExpress |
-|------------------------|---------------------|
-| 2-3 days setting up auth | **5 minutes** to first API call |
-| Security vulnerabilities from DIY code | Industry-standard bcrypt + JWT |
-| No tests, hope it works | **27 tests**, 95%+ coverage |
-| Inconsistent error handling | Unified error responses |
-| Documentation? What documentation? | Complete API docs included |
+- Authentication  
+- Password hashing  
+- Input validation  
+- Error formatting  
+- Database wiring  
+- Boilerplate testing  
+- Docker setup  
+
+**AstroExpress gives you all of this on day one — clean, tested, production-ready.**
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ❌ Without AstroExpress:
+- 2–5 days building auth  
+- Undocumented logic  
+- Zero test coverage  
+- Inconsistent error handling  
+- Hand-rolled security  
+- "Hope it works" deployments
+
+</td>
+<td width="50%" valign="top">
+
+### ✅ With AstroExpress:
+- **5 minutes** to first secure endpoint  
+- Production-ready authentication  
+- **27 tests**, 95.93% coverage  
+- Unified JSON errors  
+- Prisma + PostgreSQL pre-wired  
+- Docker-ready deployment
+
+</td>
+</tr>
+</table>
 
 ---
 
