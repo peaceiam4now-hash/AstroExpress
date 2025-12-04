@@ -457,16 +457,74 @@ docker run -p 4000:4000 \
 </td>
 <td>
 
-- ✅ Everything in Free
-- ⭐ Refresh Token Rotation
-- ⭐ Role-Based Access Control
-- ⭐ Email Verification
-- ⭐ Password Reset Flow
-- ⭐ Rate Limiting
-- ⭐ Redis Session Store
-- ⭐ Swagger/OpenAPI Docs
-- ⭐ GitHub Actions CI/CD
-- ⭐ 100+ Tests
+**Core Architecture**
+- ⭐ Layered architecture (controllers, services, repositories)
+- ⭐ Centralized configuration system
+- ⭐ Environment schema validation
+- ⭐ ESLint + Prettier preconfigured
+
+**Advanced Authentication**
+- ⭐ Access + refresh token rotation
+- ⭐ Device/session tracking
+- ⭐ Login throttling & brute-force protection
+- ⭐ IP-based suspicious login detection
+
+**Complete Account Lifecycle**
+- ⭐ Email verification flow
+- ⭐ Forgot/reset password endpoints
+- ⭐ HTML email templates
+- ⭐ Provider support (Resend, SendGrid)
+
+**RBAC Authorization Engine**
+- ⭐ Role-based access control
+- ⭐ Permission-based access control
+- ⭐ `@RequiresRole` / `@RequiresPermission` decorators
+- ⭐ Pre-seeded roles + permissions
+
+**Security Pack**
+- ⭐ Helmet configuration
+- ⭐ Rate limiting (per route + global)
+- ⭐ API key support
+- ⭐ Zod input validation + sanitization
+
+**Observability & Monitoring**
+- ⭐ OpenTelemetry tracing
+- ⭐ Structured JSON logging (Pino/Winston)
+- ⭐ Correlation ID injection
+- ⭐ Healthcheck + uptime endpoints
+
+**API Documentation**
+- ⭐ Auto-generated OpenAPI/Swagger
+- ⭐ `/docs` route with Swagger UI
+- ⭐ `openapi.json` for client generation
+
+**CLI Scaffolding Tool**
+- ⭐ `npx astro new api`
+- ⭐ `npx astro generate module users`
+- ⭐ `npx astro add auth`
+- ⭐ `npx astro add rbac`
+
+**Deployment Tooling**
+- ⭐ Production Dockerfile
+- ⭐ Render/Railway/Fly.io templates
+- ⭐ PM2 ecosystem config
+
+**Full Test Suite**
+- ⭐ 150+ tests
+- ⭐ Auth lifecycle testing
+- ⭐ RBAC testing
+- ⭐ Test factories & mock utilities
+
+**Developer Tools**
+- ⭐ VSCode workspace config
+- ⭐ Debugger launch config
+- ⭐ Git hooks with Husky
+
+**Bonus Add-ons**
+- ⭐ Postman + Insomnia collections
+- ⭐ TypeScript client SDK
+- ⭐ Audit logging module
+- ⭐ Professional documentation
 
 </td>
 <td>
@@ -475,18 +533,19 @@ docker run -p 4000:4000 \
 - 🏆 Multi-tenant Architecture
 - 🏆 OAuth2 (Google, GitHub)
 - 🏆 Two-Factor Authentication
-- 🏆 Audit Logging
+- 🏆 Advanced Audit Logging
 - 🏆 Admin Dashboard API
 - 🏆 Stripe Integration
 - 🏆 Custom Development
 - 🏆 Priority Support
 - 🏆 Architecture Review
+- 🏆 1-on-1 Onboarding Call
 
 </td>
 </tr>
 <tr>
 <td align="center"><strong>Free</strong></td>
-<td align="center"><strong>$99</strong> one-time</td>
+<td align="center"><strong>$349</strong> one-time</td>
 <td align="center"><strong>Contact Us</strong></td>
 </tr>
 </table>

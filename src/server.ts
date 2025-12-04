@@ -22,6 +22,22 @@ app.get('/health', (_req: Request, res: Response) => {
   });
 });
 
+// Welcome route
+app.get('/', (_req: Request, res: Response) => {
+  res.json({
+    name: 'AstroExpress',
+    version: '1.0.0',
+    description: 'Production-ready Express + TypeScript authentication boilerplate',
+    endpoints: {
+      health: 'GET /health',
+      register: 'POST /auth/register',
+      login: 'POST /auth/login',
+      me: 'GET /auth/me (protected)',
+    },
+    documentation: 'https://github.com/peaceiam4now-hash/AstroExpress',
+  });
+});
+
 // Routes
 app.use('/auth', authRoutes);
 
